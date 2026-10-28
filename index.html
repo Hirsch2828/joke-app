@@ -113,11 +113,11 @@
           headers: { 'content-type': 'application/json' },
           body: JSON.stringify({ topic }),
         });
-        const data = await res.json();
-        if (!res.ok || !data.joke) throw new Error(data.error || 'bad response');
+        const data = await res.json().catch(() => ({}));
+        if (!res.ok || !data.joke) throw new Error(data.error || '');
         setState('joke', data.joke, 'עוד בדיחה!');
-      } catch {
-        setState('error', 'משהו השתבש. נסו שוב.', 'לנסות שוב');
+      } catch (err) {
+        setState('error', (err.name === 'TypeError' ? '' : err.message) || 'משהו השתבש. נסו שוב.', 'לנסות שוב');
       } finally {
         btn.disabled = false;
       }

@@ -32,7 +32,7 @@
   6. בריפו ב-GitHub אין .env ואין .env.local. יש .env.example עם השורה OPENAI_API_KEY= בלבד, ויש .claude/settings.json.
   7. מי שמריץ מקומית: אותה תוצאה בכתובת http://localhost:3000.
 
-## Milestone 2: בדיחה מ-GPT-5
+## Milestone 2: בדיחה מ-GPT-5 ✅
 - המטרה: הבדיחה מגיעה מ-GPT-5 דרך הפונקציה, והמפתח נשאר בשרת.
 - לפני הקוד, ביד: לוודא שב-OpenAI יש קרדיט מראש, Auto recharge כבוי, ומגבלת הוצאה חודשית. המפתח כבר ב-Vercel מ-Milestone 1.
 - מה מממשים:
