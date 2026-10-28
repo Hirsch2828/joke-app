@@ -54,7 +54,7 @@
   7. Claude מסביר בחמש שורות פשוטות איפה המפתחות נמצאים, ולמה הם לא מגיעים לדפדפן. בלי לבקש אף מפתח.
   8. מי שמריץ מקומית: בדיחה אמיתית גם ב-localhost, עם מפתח ה-dev.
 
-## Milestone 3: התקנה בטלפון
+## Milestone 3: התקנה בטלפון ✅
 - המטרה: מתקינים את האפליקציה במסך הבית, והיא נפתחת במסך מלא.
 - מה מממשים:
   - manifest.webmanifest עם `name: "בדיחה בלחיצה"`, ‏`short_name`, ‏`start_url`, ‏`display: standalone`, ‏`lang: he`, ‏`dir: rtl`, ‏`theme_color` ו-`background_color`, שניהם `#FFE15A`.
